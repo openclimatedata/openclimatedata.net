@@ -15,12 +15,12 @@
     repo: paris-agreement-entry-into-force
     notebook: Paris%20Agreement%20Entry%20Into%20Force.ipynb
 
-  - name: Doha Amendment Entry Into Force
-    repo: doha-amendment-entry-into-force
+  - repo: doha-amendment-entry-into-force
     notebook: Doha Amendment to the Kyoto Protocol.ipynb
+    web: doha-amendment.openclimatedata.net
 
-  - name: Kigali Amendment Entry Into Force
-    repo: kigali-amendment-entry-into-force
+  - repo: kigali-amendment-entry-into-force
+    web: kigali-amendment.openclimatedata.net
 
 - name: Climate Action Plans
   items:

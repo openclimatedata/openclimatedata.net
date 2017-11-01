@@ -30,28 +30,30 @@ hr {
 {{ dataset.description }}
 </p>
 {% endif %}
+<div>
 {% if dataset["web"] %}
-<a class="w-20 f6 link dim ba ph3 pv2 mb2 dib black inline-flex items-center" href="{{ dataset.web }}">
+<a class="v-top w-20 f6 link dim ba ph3 pv2 mb2 dib black inline-flex items-center" href="{{ dataset.web }}">
 <img src="assets/info.png">
 <span class="ml3">Details</span>
 </a>
 {% endif %}
 {% if dataset["repo"] %}
-<a class="w-20 f6 link dim ba ph3 pv2 mb2 dib black inline-flex items-center" href="https://github.com/openclimatedata/{{ dataset.repo }}">
+<a class="v-top w-20 f6 link dim ba ph3 pv2 mb2 dib black inline-flex items-center" href="https://github.com/openclimatedata/{{ dataset.repo }}">
 <img src="assets/GitHub-Mark-32px.png">
 <span class="ml3">GitHub Repository</span>
 </a>
 {% endif %}
 {% if dataset["notebook"] %}
-<a class="w-20 f6 link dim ba ph3 pv2 mb2 dib black inline-flex items-center" href="http://nbviewer.jupyter.org/github/openclimatedata/notebooks/blob/master/{{ dataset.notebook }}">
+<a class="v-top w-20 f6 link dim ba ph3 pv2 mb2 dib black inline-flex items-center" href="http://nbviewer.jupyter.org/github/openclimatedata/notebooks/blob/master/{{ dataset.notebook }}">
 <img src="assets/logomark-orangebody-greyplanets.png">
 <span class="ml3">View Notebook</span>
 </a>
-<a class="w-20 f6 link dim ba ph3 pv2 mb2 dib black inline-flex items-center" href="https://beta.mybinder.org/v2/gh/openclimatedata/notebooks/master?filepath={{ dataset.notebook }}">
+<a class="v-top w-20 f6 link dim ba ph3 pv2 mb2 dib black inline-flex items-center" href="https://beta.mybinder.org/v2/gh/openclimatedata/notebooks/master?filepath={{ dataset.notebook }}">
 <img src="assets/binder-logo.png">
 <span class="ml2">Launch Notebook</span>
 </a>
 {% endif %}
+</div>
 {% endfor %}
 <hr>
 {% endfor %}
