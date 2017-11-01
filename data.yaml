@@ -26,12 +26,12 @@
   items:
   - name: (Intended) Nationally Determined Contributions
     repo: nationally-determined-contributions
-    web: http://indcs.openclimatedata.net/
+    web: http://nationally-determined-contributions.openclimatedata.net/
     description: Main document for NDCs, or INDC if not yet ratified or when no NDC has been submitted yet
 
   - name: NDCs (Nationally Determined Contributions)
     repo: ndcs
-    web: http://indcs.openclimatedata.net/
+    web: http://ndcs.openclimatedata.net/
 
   - name: INDCs (Intended Nationally Determined Contributions)
     repo: indcs
