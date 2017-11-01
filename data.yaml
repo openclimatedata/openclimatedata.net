@@ -17,10 +17,10 @@
 
   - repo: doha-amendment-entry-into-force
     notebook: Doha Amendment to the Kyoto Protocol.ipynb
-    web: doha-amendment.openclimatedata.net
+    web: http://doha-amendment.openclimatedata.net
 
   - repo: kigali-amendment-entry-into-force
-    web: kigali-amendment.openclimatedata.net
+    web: http://kigali-amendment.openclimatedata.net
 
 - name: Climate Action Plans
   items:
