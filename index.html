@@ -1,66 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Open Climate Data</title>
-    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.8.0/css/tachyons.min.css">
-    <style>
-    hr {
-      border: none;
-      height: 4px;
-      background-color: #333;
-      margin-top: 20px;
-      margin-bottom: 20px;
-    }
-    a {
-      color: #FF6300;
-    }
-    </style>
-  </head>
-  <body class="mb5 f5 sans-serif measure">
-    <div class="ph4 pt3 pb2">
-      <h1>Open Climate Data</h1>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Open Climate Data</title>
+<link rel="stylesheet" href="https://unpkg.com/tachyons@4.8.0/css/tachyons.min.css">
+<style>
+hr {
+  border: none;
+  height: 4px;
+  background-color: #333;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+</style>
+</head>
+<body class="mb5 f4 sans-serif">
+<div class="ph4 pt3 pb2 mw7">
+<h1>Open Climate Data</h1>
+<hr>
 
-    <hr>
-    <h2>Interactive Jupyter Notebooks</h2>
-    <a href="https://beta.mybinder.org/v2/gh/openclimatedata/notebooks/master?filepath=index.ipynb">Interactive Binder Notebooks (Beta)</a> <a href="https://github.com/openclimatedata/notebooks">GitHub repository</a>
+<h2>Emissions Data</h2>
+<hr>
 
-    <hr>
-    <h2>Data</h2>
-    <hr>
-      <h3>Entry Into Force of Agreements</h3>
+<h3 class="mb1">Global Carbon Budget</h3>
 
-      <h4>Paris Agreement Entry Into Force</h4>
-      <a href="https://github.com/openclimatedata/paris-agreement-entry-into-force">Data Package on GitHub</a> <a href="http://paris-agreement-entry-into-force.openclimatedata.net">Website</a>
-      <h4>Doha Amendment Entry Into Force</h4>
-      <a href="https://github.com/openclimatedata/doha-amendment-entry-into-force">Data Package on GitHub</a>
-      <h4>Kigali Amendment Entry Into Force</h4>
-      <a href="https://github.com/openclimatedata/kigali-amendment-entry-into-force">Data Package on GitHub</a>
-      <hr>
-        <h3>Climate Action Plans</h3>
-      <h4>Intended Nationally Determined Contributions (INDCs)</h4>
-      <a href="https://github.com/openclimatedata/indcs">Data Package on GitHub</a> <a href="http://indcs.openclimatedata.net">Website</a>
-      <h4>Nationally Determined Contributions (NDCs)</h4>
-      <a href="https://github.com/openclimatedata/ndcs">Data Package on GitHub</a> <a href="http://ndcs.openclimatedata.net">Website</a>
-      <h4>Nationally Determined Contributions (main documents)</h4>
-      <a href="https://github.com/openclimatedata/nationally-determined-contributions">Data Package on GitHub</a>  <a href="http://nationally-determined-contributions.openclimatedata.net">Website</a>
-      <hr>
-      <h3>Emissions Data</h3>
-      <h4>Global Carbon Budget</h4>
-      <a href="https://github.com/openclimatedata/global-carbon-budget">Data Package on GitHub</a>
-      <h4>CDIAC National Fossil Fuel and Cement Emissions</h4>
-      <a href="https://github.com/openclimatedata/cdiac-co2-fossil-national">Data Package on GitHub</a>
-      <h4>EDGAR emissions data set</h4>
-      <a href="https://github.com/openclimatedata/edgar">Data Package on GitHub</a>
-      <h4>EDGAR CO2 emissions data set</h4>
-      <a href="https://github.com/openclimatedata/edgar-co2-emissions">Data Package on GitHub</a>
+<p class="f6 measure-wide">
+Global carbon cycle and emissions data, including fossil-fuel, cement, and land-use change emissions, atmospheric growth, and ocean and land sinks
+</p>
 
-      <hr>
-      <h2>Visualisations</h2>
-      <a href="climate-spirals/">Climate Spirals</a>
-      <hr>
-    </div>
-  </body>
+
+
+<a class="w-20 f6 link dim ba ph3 pv2 mb2 dib black inline-flex items-center" href="https://github.com/openclimatedata/global-carbon-budget">
+<img src="assets/GitHub-Mark-32px.png">
+<span class="ml3">GitHub Repository</span>
+</a>
+
+
+<a class="w-20 f6 link dim ba ph3 pv2 mb2 dib black inline-flex items-center" href="http://nbviewer.jupyter.org/github/openclimatedata/notebooks/blob/master/Global Carbon Budget | Fossil Fuel and Cement Production.ipynb">
+<img src="assets/logomark-orangebody-greyplanets.png">
+<span class="ml3">View Notebook</span>
+</a>
+<a class="w-20 f6 link dim ba ph3 pv2 mb2 dib black inline-flex items-center" href="https://beta.mybinder.org/v2/gh/openclimatedata/notebooks/master?filepath=Global Carbon Budget | Fossil Fuel and Cement Production.ipynb">
+<img src="assets/binder-logo.png">
+<span class="ml2">Launch Notebook</span>
+</a>
+
+
+<h3 class="mb1">CDIAC National Fossil-Fuel CO₂ Emissions</h3>
+
+<p class="f6 measure-wide">
+National CO₂ Emissions Estimates primarily derived from energy statistics
+</p>
+
+
+
+<a class="w-20 f6 link dim ba ph3 pv2 mb2 dib black inline-flex items-center" href="https://github.com/openclimatedata/cdiac-co2-fossil-national">
+<img src="assets/GitHub-Mark-32px.png">
+<span class="ml3">GitHub Repository</span>
+</a>
+
+
+
+<h3 class="mb1">EDGAR Global Emissions Dataset</h3>
+
+<p class="f6 measure-wide">
+Emissions for the three main greenhouse gases per sector and country
+</p>
+
+
+
+<a class="w-20 f6 link dim ba ph3 pv2 mb2 dib black inline-flex items-center" href="https://github.com/openclimatedata/edgar">
+<img src="assets/GitHub-Mark-32px.png">
+<span class="ml3">GitHub Repository</span>
+</a>
+
+
+
+<h3 class="mb1">EDGAR CO₂ emissions 1970-2016</h3>
+
+<p class="f6 measure-wide">
+Timeseries of CO₂ emissions by country and sector (Transport, Other industrial combustion, Buildings, Non-combustion, Power Industry) in kt/year.
+</p>
+
+
+
+<a class="w-20 f6 link dim ba ph3 pv2 mb2 dib black inline-flex items-center" href="https://github.com/openclimatedata/edgar-co2-emissions">
+<img src="assets/GitHub-Mark-32px.png">
+<span class="ml3">GitHub Repository</span>
+</a>
+
+
+<a class="w-20 f6 link dim ba ph3 pv2 mb2 dib black inline-flex items-center" href="http://nbviewer.jupyter.org/github/openclimatedata/notebooks/blob/master/EDGAR CO2 Emissions.ipynb">
+<img src="assets/logomark-orangebody-greyplanets.png">
+<span class="ml3">View Notebook</span>
+</a>
+<a class="w-20 f6 link dim ba ph3 pv2 mb2 dib black inline-flex items-center" href="https://beta.mybinder.org/v2/gh/openclimatedata/notebooks/master?filepath=EDGAR CO2 Emissions.ipynb">
+<img src="assets/binder-logo.png">
+<span class="ml2">Launch Notebook</span>
+</a>
+
+
+<hr>
+
+<h2>Agreements</h2>
+<hr>
+
+<h3 class="mb1">Entry Into Force of the Paris Climate Agreement</h3>
+
+<p class="f6 measure-wide">
+Combined dataset of signature, ratification, acceptance, or approval status of the Paris Climate Agreement, and the emissions shares used for entry into force.
+</p>
+
+
+<a class="w-20 f6 link dim ba ph3 pv2 mb2 dib black inline-flex items-center" href="http://paris-agreement-entry-into-force.openclimatedata.net/">
+<img src="assets/info.png">
+<span class="ml3">Details</span>
+</a>
+
+
+<a class="w-20 f6 link dim ba ph3 pv2 mb2 dib black inline-flex items-center" href="https://github.com/openclimatedata/paris-agreement-entry-into-force">
+<img src="assets/GitHub-Mark-32px.png">
+<span class="ml3">GitHub Repository</span>
+</a>
+
+
+<a class="w-20 f6 link dim ba ph3 pv2 mb2 dib black inline-flex items-center" href="http://nbviewer.jupyter.org/github/openclimatedata/notebooks/blob/master/Paris%20Agreement%20Entry%20Into%20Force.ipynb">
+<img src="assets/logomark-orangebody-greyplanets.png">
+<span class="ml3">View Notebook</span>
+</a>
+<a class="w-20 f6 link dim ba ph3 pv2 mb2 dib black inline-flex items-center" href="https://beta.mybinder.org/v2/gh/openclimatedata/notebooks/master?filepath=Paris%20Agreement%20Entry%20Into%20Force.ipynb">
+<img src="assets/binder-logo.png">
+<span class="ml2">Launch Notebook</span>
+</a>
+
+
+<h3 class="mb1">Ratification Status of the Doha Amendment to the Kyoto Protocol</h3>
+
+
+
+<a class="w-20 f6 link dim ba ph3 pv2 mb2 dib black inline-flex items-center" href="https://github.com/openclimatedata/doha-amendment-entry-into-force">
+<img src="assets/GitHub-Mark-32px.png">
+<span class="ml3">GitHub Repository</span>
+</a>
+
+
+<a class="w-20 f6 link dim ba ph3 pv2 mb2 dib black inline-flex items-center" href="http://nbviewer.jupyter.org/github/openclimatedata/notebooks/blob/master/Doha Amendment to the Kyoto Protocol.ipynb">
+<img src="assets/logomark-orangebody-greyplanets.png">
+<span class="ml3">View Notebook</span>
+</a>
+<a class="w-20 f6 link dim ba ph3 pv2 mb2 dib black inline-flex items-center" href="https://beta.mybinder.org/v2/gh/openclimatedata/notebooks/master?filepath=Doha Amendment to the Kyoto Protocol.ipynb">
+<img src="assets/binder-logo.png">
+<span class="ml2">Launch Notebook</span>
+</a>
+
+
+<h3 class="mb1">Ratification Status of the Kigali Amendment to the Montreal Protocol on Substances that Deplete the Ozone Layer</h3>
+
+
+
+<a class="w-20 f6 link dim ba ph3 pv2 mb2 dib black inline-flex items-center" href="https://github.com/openclimatedata/kigali-amendment-entry-into-force">
+<img src="assets/GitHub-Mark-32px.png">
+<span class="ml3">GitHub Repository</span>
+</a>
+
+
+
+<hr>
+
+<h2>Climate Action Plans</h2>
+<hr>
+
+<h3 class="mb1">(Intended) Nationally Determined Contributions</h3>
+
+<p class="f6 measure-wide">
+(Intended) Nationally Determined Contributions as provided in the UNFCCC registries, containing only the main document and using the English version if multiple are available
+</p>
+
+
+<a class="w-20 f6 link dim ba ph3 pv2 mb2 dib black inline-flex items-center" href="http://indcs.openclimatedata.net/">
+<img src="assets/info.png">
+<span class="ml3">Details</span>
+</a>
+
+
+<a class="w-20 f6 link dim ba ph3 pv2 mb2 dib black inline-flex items-center" href="https://github.com/openclimatedata/nationally-determined-contributions">
+<img src="assets/GitHub-Mark-32px.png">
+<span class="ml3">GitHub Repository</span>
+</a>
+
+
+
+<h3 class="mb1">Nationally Determined Contributions</h3>
+
+<p class="f6 measure-wide">
+Nationally Determined Contributions (NDCs) as provided in the UNFCCC interim registry
+</p>
+
+
+<a class="w-20 f6 link dim ba ph3 pv2 mb2 dib black inline-flex items-center" href="http://indcs.openclimatedata.net/">
+<img src="assets/info.png">
+<span class="ml3">Details</span>
+</a>
+
+
+<a class="w-20 f6 link dim ba ph3 pv2 mb2 dib black inline-flex items-center" href="https://github.com/openclimatedata/ndcs">
+<img src="assets/GitHub-Mark-32px.png">
+<span class="ml3">GitHub Repository</span>
+</a>
+
+
+
+<h3 class="mb1">Intended Nationally Determined Contributions (INDCs)</h3>
+
+<p class="f6 measure-wide">
+Intended Nationally Determined Contributions (INDCs) as submitted by parties
+</p>
+
+
+<a class="w-20 f6 link dim ba ph3 pv2 mb2 dib black inline-flex items-center" href="http://indcs.openclimatedata.net/">
+<img src="assets/info.png">
+<span class="ml3">Details</span>
+</a>
+
+
+<a class="w-20 f6 link dim ba ph3 pv2 mb2 dib black inline-flex items-center" href="https://github.com/openclimatedata/indcs">
+<img src="assets/GitHub-Mark-32px.png">
+<span class="ml3">GitHub Repository</span>
+</a>
+
+
+
+<hr>
+
+</div>
+</body>
 </html>

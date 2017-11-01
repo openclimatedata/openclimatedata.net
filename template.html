@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Open Climate Data</title>
+<link rel="stylesheet" href="https://unpkg.com/tachyons@4.8.0/css/tachyons.min.css">
+<style>
+hr {
+  border: none;
+  height: 4px;
+  background-color: #333;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+</style>
+</head>
+<body class="mb5 f4 sans-serif">
+<div class="ph4 pt3 pb2 mw7">
+<h1>Open Climate Data</h1>
+<hr>
+{% for group in data %}
+<h2>{{ group.name }}</h2>
+<hr>
+{% for dataset in group["items"] %}
+<h3 class="mb1">{{ dataset.title }}</h3>
+{% if dataset["description"] %}
+<p class="f6 measure-wide">
+{{ dataset.description }}
+</p>
+{% endif %}
+{% if dataset["web"] %}
+<a class="w-20 f6 link dim ba ph3 pv2 mb2 dib black inline-flex items-center" href="{{ dataset.web }}">
+<img src="assets/info.png">
+<span class="ml3">Details</span>
+</a>
+{% endif %}
+{% if dataset["repo"] %}
+<a class="w-20 f6 link dim ba ph3 pv2 mb2 dib black inline-flex items-center" href="https://github.com/openclimatedata/{{ dataset.repo }}">
+<img src="assets/GitHub-Mark-32px.png">
+<span class="ml3">GitHub Repository</span>
+</a>
+{% endif %}
+{% if dataset["notebook"] %}
+<a class="w-20 f6 link dim ba ph3 pv2 mb2 dib black inline-flex items-center" href="http://nbviewer.jupyter.org/github/openclimatedata/notebooks/blob/master/{{ dataset.notebook }}">
+<img src="assets/logomark-orangebody-greyplanets.png">
+<span class="ml3">View Notebook</span>
+</a>
+<a class="w-20 f6 link dim ba ph3 pv2 mb2 dib black inline-flex items-center" href="https://beta.mybinder.org/v2/gh/openclimatedata/notebooks/master?filepath={{ dataset.notebook }}">
+<img src="assets/binder-logo.png">
+<span class="ml2">Launch Notebook</span>
+</a>
+{% endif %}
+{% endfor %}
+<hr>
+{% endfor %}
+</div>
+</body>
+</html>

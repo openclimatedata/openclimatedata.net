@@ -1,0 +1,39 @@
+- name: Emissions Data
+  items:
+  - repo: global-carbon-budget
+    notebook: Global Carbon Budget | Fossil Fuel and Cement Production.ipynb
+  - repo: cdiac-co2-fossil-national
+  - repo: edgar
+  - repo: edgar-co2-emissions
+    notebook: EDGAR CO2 Emissions.ipynb
+
+- name: Agreements
+  items:
+  - name: Paris Agreement Entry Into Force
+    description: Dates of signature, ratification, acceptance, or approval of the Paris Climate Agreement, and the emissions shares used for entry into force.
+    web: http://paris-agreement-entry-into-force.openclimatedata.net/
+    repo: paris-agreement-entry-into-force
+    notebook: Paris%20Agreement%20Entry%20Into%20Force.ipynb
+
+  - name: Doha Amendment Entry Into Force
+    repo: doha-amendment-entry-into-force
+    notebook: Doha Amendment to the Kyoto Protocol.ipynb
+
+  - name: Kigali Amendment Entry Into Force
+    repo: kigali-amendment-entry-into-force
+
+- name: Climate Action Plans
+  items:
+  - name: (Intended) Nationally Determined Contributions
+    repo: nationally-determined-contributions
+    web: http://indcs.openclimatedata.net/
+    description: Main document for NDCs, or INDC if not yet ratified or when no NDC has been submitted yet
+
+  - name: NDCs (Nationally Determined Contributions)
+    repo: ndcs
+    web: http://indcs.openclimatedata.net/
+
+  - name: INDCs (Intended Nationally Determined Contributions)
+    repo: indcs
+    web: http://indcs.openclimatedata.net/
+
