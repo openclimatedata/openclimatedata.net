@@ -3,6 +3,13 @@
   - repo: global-carbon-budget
     notebook: Global Carbon Budget | Fossil Fuel and Cement Production.ipynb
   - repo: cdiac-co2-fossil-national
+  - web: https://www.pik-potsdam.de/paris-reality-check/primap-hist/
+    title: PRIMAP-hist
+    description: PRIMAP-hist combines several  datasets to create  comprehensive greenhouse gas emission data covering the years 1850 to 2015 and all UNFCCC (United Nations Framework Convention on Climate Change) member states as well as most non-UNFCCC territories
+  - web: https://www.pik-potsdam.de/paris-reality-check/primap-crf/
+    title: PRIMAP-crf
+    description: PRIMAP-crf is a processed version of data reported by countries to the United Nations Framework Convention on Climate Change (UNFCCC) in the Common Reporting Format (CRF) in a single clean CSV file IPCC 2006 categories
+  - repo: unfccc-detailed-data-by-party
   - repo: edgar
   - repo: edgar-co2-emissions
     notebook: EDGAR CO2 Emissions.ipynb
@@ -10,7 +17,7 @@
 - name: Agreements
   items:
   - name: Paris Agreement Entry Into Force
-    description: Dates of signature, ratification, acceptance, or approval of the Paris Climate Agreement, and the emissions shares used for entry into force.
+    description: Dates of signature, ratification, acceptance, or approval of the Paris Climate Agreement, and the emissions shares used for entry into force
     web: http://paris-agreement-entry-into-force.openclimatedata.net/
     repo: paris-agreement-entry-into-force
     notebook: Paris%20Agreement%20Entry%20Into%20Force.ipynb

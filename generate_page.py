@@ -18,11 +18,12 @@ template = env.get_template(TEMPLATE_FILE)
 
 for group in data:
     for item in group["items"]:
-        path = parent / item["repo"] / "datapackage.json"
-        dp = json.load(open(str(path), "r"))
-        item["title"] = dp["title"]
-        if "description" in dp:
-            item["description"] = dp["description"]
+        if "repo" in item:
+            path = parent / item["repo"] / "datapackage.json"
+            dp = json.load(open(str(path), "r"))
+            item["title"] = dp["title"]
+            if "description" in dp:
+                item["description"] = dp["description"]
 
 output = template.render(data=data)
 
