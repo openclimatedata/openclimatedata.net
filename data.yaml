@@ -13,6 +13,7 @@
   - repo: edgar
   - repo: edgar-co2-emissions
     notebook: EDGAR CO2 Emissions.ipynb
+  - repo: ceds
 
 - name: Agreements
   items:
