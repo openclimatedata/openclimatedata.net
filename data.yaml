@@ -30,9 +30,9 @@
   - repo: kigali-amendment-entry-into-force
     web: http://kigali-amendment.openclimatedata.net
 
-- name: Climate Action Plans
+- name: "National Climate Plans: NDCs & INDCs"
   items:
-  - repo: nationally-determined-contributions
+  - repo: national-climate-plans
     web: http://nationally-determined-contributions.openclimatedata.net/
     description: Main document for NDCs, or INDC if not yet ratified or when no NDC has been submitted yet
 
