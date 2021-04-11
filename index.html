@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Open Climate Data</title>
-<link rel="stylesheet" href="https://unpkg.com/tachyons@4.8.0/css/tachyons.min.css">
+<link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css">
 <style>
 hr {
   border: none;
@@ -17,10 +17,30 @@ hr {
 </style>
 </head>
 <body class="mb5 f4 sans-serif">
-<div class="ph4 pt3 pb2 mw7">
+
+<div class="ph4 pt3 pb2 mw12">
 <h1>Open Climate Data</h1>
 <hr>
 
+<div class="fl w-third-ns w-100">
+<h2>Emissions</h2>
+<div id="fig-emissions"></div>
+</div>
+
+<div class="fl w-third-ns w-100">
+<h2>Concentrations</h2>
+</div>
+
+<div class="fl w-third-ns w-100">
+<h2>Global Temperature</h2>
+</div>
+
+<hr>
+
+</div>
+
+
+<div class="ph4 pt3 pb2 mw7">
 <h2>Emissions Data</h2>
 <hr>
 
@@ -360,5 +380,14 @@ The datasets come from different institutes and organisations and are provided u
 </small>
 </div>
 </div>
+<script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-lite@4"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+<script>
+var spec = "./figures/global-co2-emissions.json";
+vegaEmbed('#fig-emissions', spec).then(function(result) {
+  // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+}).catch(console.error);
+</script>
 </body>
 </html>
